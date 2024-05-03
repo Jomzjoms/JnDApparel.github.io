@@ -1,0 +1,539 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* Dropdown Button */
+.dropbtn {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    display: block;
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+
+#navbar {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    transition: background-color 0.3s;
+    /* Smooth transition for background color change */
+    box-shadow: none;
+    /* Remove box shadow */
+}
+#navbar.scrolled {
+    background-color: rgb(250, 251, 255);
+    /* Change background color when scrolled */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    /* Adjust as needed */
+    font-family: inherit;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin-right: 30px;
+
+}
+
+.nav-links ul li:last-child {
+    margin-right: 0;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #333;
+    /* Adjust as needed */
+    font-weight: bold;
+    /* Adjust as needed */
+}
+.logo {
+    margin-right: 20px;
+    /* Adjust as needed */
+}
+
+.logo img {
+    width: 130px;
+    margin-left: 20px;
+    /* Adjust as needed */
+}
+
+.logo a {
+    text-decoration: none;
+    color: #333;
+    /* Adjust as needed */
+}
+
+/* responsive nav bar*/
+/* Add styles for hamburger menu */
+.hamburger-menu {
+    display: none;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px auto;
+}
+
+/* Add media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #f8f9fa;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+    }
+
+    .nav-links ul li {
+        margin: 10px 0;
+    }
+
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    #navbar.active .nav-links {
+        display: block;
+    }
+    .logo {
+        flex: 1; /* This will make the logo take up remaining space */
+        text-align: center; /* Center the content horizontally */
+    }
+    
+    .logo img {
+        width: 100px;
+        /* margin-left: 20px; Remove this line */
+        /* Adjust as needed */
+    }
+    
+    .logo a {
+        text-decoration: none;
+        color: #333;
+        /* Adjust as needed */
+    }
+}
+
+
+
+/* product section */
+.product-section {
+    text-align: center;
+}
+.product-section h1 {
+    margin-top: 20px;
+}
+
+.product {
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+    max-width: 200px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product:hover img {
+    transform: scale(0.9);
+}
+
+.product-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.product:hover .product-hover {
+    opacity: 1;
+}
+
+.overview-tooltip {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+
+/* footer */
+
+.imagelogo {
+    text-align: right; /* Aligning the logo to the right */
+}
+
+.footer-logo {
+    max-width: 300px; /* Adjust the max-width as needed */
+    height: auto; /* Ensures the aspect ratio is maintained */
+}
+.site-footer {
+    background-color: #1a1a1d;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5;
+}
+
+.site-footer hr.small {
+    margin: 20px 0;
+}
+
+.site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+.site-footer a {
+    color: #737373;
+}
+
+.site-footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-links li {
+    display: block;
+}
+
+.footer-links a {
+    color: #737373;
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.site-footer .social-icons {
+    text-align: right;
+}
+
+.site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #202020;
+}
+
+.copyright-text {
+    margin: 0;
+}
+
+@media (max-width: 991px) {
+    .site-footer [class^="col-"] {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .imagelogo {
+        text-align: right; /* Aligning the logo to the right */
+        text-align: center;
+    }
+    
+    .footer-logo {
+        max-width: 200px; /* Adjust the max-width as needed */
+        height: auto; /* Ensures the aspect ratio is maintained */
+    }
+}
+
+@media (max-width: 767px) {
+    .site-footer {
+        padding-bottom: 0;
+    }
+
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+        text-align: center;
+    }
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.logo {
+    color: #6096ba;
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe;
+}
+
+.social-icons a.facebook:hover {
+    background-color: #3b5998;
+}
+
+.social-icons a.twitter:hover {
+    background-color: #00aced;
+}
+
+.social-icons a.linkedin:hover {
+    background-color: #9210b9;
+}
+
+.social-icons a.dribbble:hover {
+    background-color: #ea4c89;
+}
+
+/* Shirts */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #588157; /* Background color */
+    border: 1px solid #ccc; /* Border */
+    padding: 20px;
+    z-index: 9999;
+    font-size: 60px; /* Font size */
+    color: aliceblue; /* Text color */
+}
+
+
+/* sizechart */
+.image-container {
+    text-align: center;
+}
+.image-container {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Add some spacing between images */
+}
+
+@media only screen and (min-width: 768px) {
+    .image-container img {
+        width: 80%; /* Adjust the width for medium-sized screens */
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .image-container img {
+        width: 60%; /* Adjust the width for larger screens */
+    }
+}
+
+/* all shirts */
+.product-section h1{
+    margin-top: 70px;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+}
+
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-top: 70px;
+}
+
+.product-image {
+    max-width: 100%;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+
+.product-description {
+    margin-top: 20px;
+    display: flex; /* Add flex display to align items */
+    align-items: flex-start; /* Align items to the start of the container */
+}
+
+.product-description form {
+    font-weight: bolder;
+    flex: 1; /* Allow the form to take up remaining space */
+    margin-top: 35px;
+}
+
+.product-description label {
+    margin-bottom: 5px;
+}
+
+.product-description input[type="text"],
+.product-description select, 
+.product-description input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+.product-description button {
+    background-color: #161a16;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bolder;
+}   
+
+.product-description button:hover {
+    background-color: #212221;
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (min-width: 768px) {
+    .product-container {
+        flex-direction: row;
+    }
+
+    .product-image {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .product-description {
+        flex: 1;
+        margin-top: 0;
+    }
+
+    .product-description form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-description input[type="text"],
+    .product-description select, 
+    .product-description input[type="email"]{
+        width: calc(50% - 5px);
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .product-description button {
+        padding: 15px;
+        width: calc(50% - 5px);
+        margin-right: 0;
+        margin-top: 0;
+    }
+}

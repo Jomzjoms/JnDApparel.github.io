@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J&D Clothing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="J&D APPAREL FINAL LOGO black.png" alt="J&D Logo"></a>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">CATEGORIES</a>
+                    <div class="dropdown-content">
+                        <a href="shirt.html">Shirts</a>
+                        <a href="hoodie.html">Hoodies</a>
+                        <a href="crewneck.html">Long Sleeves</a>
+                    </div>
+                </li>
+                <li><a href="contactus.html">CONTACT</a></li>
+                <li><a href="sizechart.html">SIZE CHART</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <nav id="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="J&D APPAREL FINAL LOGO black.png" alt="J&D Logo"></a>
+        </div>
+        <div class="nav-links">
+            <ul class="nav-list">
+                <li><a href="index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">CATEGORIES</a>
+                    <div class="dropdown-content">
+                        <a href="shirt.html">Shirts</a>
+                        <a href="hoodie.html">Hoodies</a>
+                        <a href="crewneck.html">Long Sleeves</a>
+                    </div>
+                </li>
+                <li><a href="contactus.html">CONTACT</a></li>
+                <li><a href="sizechart.html">SIZE CHART</a></li>
+            </ul>
+        </div>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <div class="product-container">
+        <div class="product-image">
+            <img src="shirt7.png" alt="Product Image">
+        </div>
+        <div class="product-description">
+            <form id="purchase-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Name" name="name" required>
+                <label for="address">Address:</label>
+                <input type="text" id="address" placeholder="Address" name="address" required>
+                <label for="contact">Contact number:</label>
+                <input type="text" id="contact" placeholder="Contact number" name="contact" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Email" name="email" required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <label for="quantity">Quantity:</label>
+                <select id="quantity" name="quantity" required>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+                <label for="size">Size:</label>
+                <select id="size" name="size" required>
+                    <option value="size">size</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="extra large">Extra Large</option>
+                </select>
+                <div class="buttons">
+                    <button class="add-to-cart-button">Add to Cart</button>
+                    <button class="buy-button" id="buyButton">Buy</button>
+                    <div id="thank-you-popup" class="popup">
+                        <p>Thank you for Purchasing!</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+
+     <footer id="footer" class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
+                    <p class="text-justify">We're a passionate team of entrepreneurs who
+                        believe that style should be accessible to everyone, no matter where they are. Inspired by the
+                        ever-evolving world of fashion and the convenience of online shopping, we founded our apparel
+                        business with a simple goal in mind: to make it easy for you to express yourself through
+                        clothing.</p>
+                </div>
+                <div class="col-sm-12 col-md-6 text-right"> <!-- Modified class to add styling -->
+                    <div class="imagelogo">
+                        <img src="J&D APPAREL FINAL LOGO white.png" alt="" class="footer-logo">
+                        <!-- Added class for styling -->
+                    </div>
+                </div>
+            </div>
+            <hr class="small">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-12">
+                    <p class="copyright-text">Copyright © 2024 All Rights Reserved by
+                        <a href="#"><span class="logo">J&D Apparel.</span></a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="https://www.facebook.com/profile.php?id=61555205324570"><i
+                                    class="fab fa-facebook-f"></i></a></li>
+                        <li><a class="dribbble" href="https://www.instagram.com/z_mojz/"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li><a class="linkedin" href="https://www.tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+<script src="script.js"></script> <!-- Include JavaScript file -->
+
+</html>
